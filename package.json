@@ -1,0 +1,24 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "yarn backend:start",
+    "backend:start": "cd src/Web && dotnet run --watch",
+    "backend:build": "cd src/Web && dotnet build",
+    "frontend:install": "cd src/Web/ClientApp && yarn",
+    "frontend:start": "cd src/Web/ClientApp &&  yarn start",
+    "frontend:build": "cd src/Web/ClientApp && yarn build",
+    "frontend:add": "cd src/Web/ClientApp && yarn add",
+    "frontend:remove": "cd src/Web/ClientApp && yarn remove",
+    "format": "yarn format:prettier",
+    "format:prettier": "cd src/Web/ClientApp && yarn prettier --write ./",
+    "lint": "yarn lint:prettier && yarn lint:eslint",
+    "lint:prettier": "cd src/Web/ClientApp && yarn prettier --check ./",
+    "lint:eslint": "cd src/Web/ClientApp && yarn run eslint . --ext .js,.jsx,.ts,.tsx",
+    "test:cypress": "cd src/Web/ClientApp && yarn run cypress open",
+    "test": "yarn test:cypress",
+    "test:headless": "cd src/Web/ClientApp && yarn run cypress run"
+  }
+}

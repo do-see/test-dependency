@@ -1,0 +1,70 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Hosting.Server.Abstractions" Version="2.2.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+      <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
+      <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
+      <PackageReference Include="MongoDB.Driver" Version="2.18.0" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+      <PackageReference Include="RestSharp" Version="107.3.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="AasRegistry\Templates\aasIdsSubmodel.json" />
+      <EmbeddedResource Include="AasLookupService\Templates\aasIdsSubmodel.json" />
+      <None Remove="RequiredShellsAssertion\RequiredShellsResources\Registry\Submodels\aHR0cHM6Ly93Z3JwLmJpei94TkJMeTFD.json" />
+      <EmbeddedResource Include="RequiredShellsAssertion\RequiredShellsResources\Registry\Submodels\aHR0cHM6Ly93Z3JwLmJpei94TkJMeTFD.json" />
+      <None Remove="RequiredShellsAssertion\RequiredShellsResources\Registry\aHR0cHM6Ly9tbmVzdGl4LmNvbS9hYXMvcmVnaXN0cnk.json" />
+      <EmbeddedResource Include="RequiredShellsAssertion\RequiredShellsResources\Registry\aHR0cHM6Ly9tbmVzdGl4LmNvbS9hYXMvcmVnaXN0cnk.json" />
+      <None Remove="RequiredShellsAssertion\RequiredShellsResources\Registry\aHR0cHM6Ly9tbmVzdGl4LmNvbS9hYXMvcmVnaXN0cnlURVNU.json" />
+      <None Remove="RequiredShellsAssertion\RequiredShellsResources\xNBLy1C_20220316\Submodels\aHR0cHM6Ly93Z3JwLmJpei9zbS82MDVFODMxQUEzNTY0NUQ2QTE5NEU2NDMxMkFCNTk5Qg.json" />
+      <EmbeddedResource Include="RequiredShellsAssertion\RequiredShellsResources\xNBLy1C_20220316\Submodels\Nameplate.json" />
+      <None Remove="RequiredShellsAssertion\RequiredShellsResources\xNBLy1C_20220316\Submodels\aHR0cHM6Ly93Z3JwLmJpei9zbS83MTdCMkQxMzhCRTE0RkJBOUU0NTlFNEJDODdDNTAwMg.json" />
+      <EmbeddedResource Include="RequiredShellsAssertion\RequiredShellsResources\xNBLy1C_20220316\Submodels\Documentation.json" />
+      <None Remove="RequiredShellsAssertion\RequiredShellsResources\xNBLy1C_20220316\Submodels\aHR0cHM6Ly93Z3JwLmJpei9zbS83NEI2Qjg2ODYxMkY0QkVGQjQ4NEEwM0I5RkY1MDMxQw.json" />
+      <EmbeddedResource Include="RequiredShellsAssertion\RequiredShellsResources\xNBLy1C_20220316\Submodels\MCAD.json" />
+      <None Remove="RequiredShellsAssertion\RequiredShellsResources\xNBLy1C_20220316\Submodels\aHR0cHM6Ly93Z3JwLmJpei9zbS84NEQyOTYyNjM0MDI0NTRCQTBGQzFBN0JGQjIyNjlDOA.json" />
+      <EmbeddedResource Include="RequiredShellsAssertion\RequiredShellsResources\xNBLy1C_20220316\Submodels\ProductCarbonFootprint.json" />
+      <None Remove="RequiredShellsAssertion\RequiredShellsResources\xNBLy1C_20220316\Submodels\aHR0cHM6Ly93Z3JwLmJpei9zbS9DQzQ2RENCNDNBQjU0RUQwODgxQ0E4NzI3OTI4REE1OQ.json" />
+      <EmbeddedResource Include="RequiredShellsAssertion\RequiredShellsResources\xNBLy1C_20220316\Submodels\TechnicalData.json" />
+      <None Remove="RequiredShellsAssertion\RequiredShellsResources\xNBLy1C_20220316\aHR0cHM6Ly93Z3JwLmJpei9hYXMveE5CTHkxQw.json" />
+      <EmbeddedResource Include="RequiredShellsAssertion\RequiredShellsResources\xNBLy1C_20220316\aHR0cHM6Ly93Z3JwLmJpei9hYXMveE5CTHkxQw.json" />
+      <None Remove="RequiredShellsAssertion\RequiredShellsResources\Configuration\aHR0cHM6Ly9tbmVzdGl4LmNvbS9hYXMvRTA0NjhEMEM5NzMwNDI0M0I4RjAzODdBMTMzM0I0QTg.json" />
+      <EmbeddedResource Include="RequiredShellsAssertion\RequiredShellsResources\Configuration\aHR0cHM6Ly9tbmVzdGl4LmNvbS9hYXMvRTA0NjhEMEM5NzMwNDI0M0I4RjAzODdBMTMzM0I0QTg.json" />
+      <None Remove="RequiredShellsAssertion\RequiredShellsResources\Configuration\Submodels\IdGenerationSettings.json" />
+      <EmbeddedResource Include="RequiredShellsAssertion\RequiredShellsResources\Configuration\Submodels\IdGenerationSettings.json" />
+      <None Remove="RequiredShellsAssertion\RequiredShellsResources\DefaultTemplate\aHR0cHM6Ly9tbmVzdGl4LmNvbS9hYXMvRjExQkY5RjY5NkEzNDU0RUJBMEFBNDUwMzc4M0YxNDJfNA.json" />
+      <EmbeddedResource Include="RequiredShellsAssertion\RequiredShellsResources\DefaultTemplate\aHR0cHM6Ly9tbmVzdGl4LmNvbS9hYXMvRjExQkY5RjY5NkEzNDU0RUJBMEFBNDUwMzc4M0YxNDJfNA.json" />
+      <None Remove="RequiredShellsAssertion\RequiredShellsResources\DefaultTemplate\Submodels\aHR0cHM6Ly9hZG1pbi1zaGVsbC5pby96dmVpL25hbWVwbGF0ZS8xLzAvTmFtZXBsYXRl.json" />
+      <EmbeddedResource Include="RequiredShellsAssertion\RequiredShellsResources\DefaultTemplate\Submodels\aHR0cHM6Ly9hZG1pbi1zaGVsbC5pby96dmVpL25hbWVwbGF0ZS8xLzAvTmFtZXBsYXRl.json" />
+      <None Remove="RequiredShellsAssertion\RequiredShellsResources\CustomTemplate\aHR0cHM6Ly9tbmVzdGl4LmNvbS9hYXMvQjk5NjFBRkFDMzMyNDgwOUFGQzVFNDhEMjZENTU5OTJfMw.json" />
+      <EmbeddedResource Include="RequiredShellsAssertion\RequiredShellsResources\CustomTemplate\aHR0cHM6Ly9tbmVzdGl4LmNvbS9hYXMvQjk5NjFBRkFDMzMyNDgwOUFGQzVFNDhEMjZENTU5OTJfMw.json" />
+      <None Remove="RequiredShellsAssertion\RequiredShellsResources\DefaultTemplate\Submodels\aHR0cHM6Ly9hZG1pbi1zaGVsbC5pby96dmVpL25hbWVwbGF0ZS8yLzAvTmFtZXBsYXRl.json" />
+      <EmbeddedResource Include="RequiredShellsAssertion\RequiredShellsResources\DefaultTemplate\Submodels\aHR0cHM6Ly9hZG1pbi1zaGVsbC5pby96dmVpL25hbWVwbGF0ZS8yLzAvTmFtZXBsYXRl.json" />
+      <None Remove="RequiredShellsAssertion\RequiredShellsResources\DefaultTemplate\Submodels\aHR0cHM6Ly9hZG1pbi1zaGVsbC5pby96dmVpL25hbWVwbGF0ZS8xLzAvQ29udGFjdEluZm9ybWF0aW9ucw.json" />
+      <EmbeddedResource Include="RequiredShellsAssertion\RequiredShellsResources\DefaultTemplate\Submodels\aHR0cHM6Ly9hZG1pbi1zaGVsbC5pby96dmVpL25hbWVwbGF0ZS8xLzAvQ29udGFjdEluZm9ybWF0aW9ucw.json" />
+      <None Remove="RequiredShellsAssertion\RequiredShellsResources\DefaultTemplate\Submodels\aHR0cHM6Ly9hZG1pbi1zaGVsbC5pby9aVkVJL1RlY2huaWNhbERhdGEvU3VibW9kZWwvMS8y.json" />
+      <EmbeddedResource Include="RequiredShellsAssertion\RequiredShellsResources\DefaultTemplate\Submodels\aHR0cHM6Ly9hZG1pbi1zaGVsbC5pby9aVkVJL1RlY2huaWNhbERhdGEvU3VibW9kZWwvMS8y.json" />
+      <None Remove="RequiredShellsAssertion\RequiredShellsResources\DefaultTemplate\Submodels\aHR0cHM6Ly9hZG1pbi1zaGVsbC5pby92ZGkvMjc3MC8xLzIvSGFuZG92ZXJEb2N1bWVudGF0aW9u.json" />
+      <EmbeddedResource Include="RequiredShellsAssertion\RequiredShellsResources\DefaultTemplate\Submodels\aHR0cHM6Ly9hZG1pbi1zaGVsbC5pby92ZGkvMjc3MC8xLzIvSGFuZG92ZXJEb2N1bWVudGF0aW9u.json" />
+      <None Remove="AasCreator\Templates\aas.json" />
+      <EmbeddedResource Include="AasCreator\Templates\aas.json" />
+      <None Remove="RequiredShellsAssertion\RequiredShellsResources\DefaultTemplate\Submodels\aHR0cHM6Ly9hZG1pbi1zaGVsbC5pby9pZHRhL1RpbWVTZXJpZXMvMS8x.json" />
+      <EmbeddedResource Include="RequiredShellsAssertion\RequiredShellsResources\DefaultTemplate\Submodels\aHR0cHM6Ly9hZG1pbi1zaGVsbC5pby9pZHRhL1RpbWVTZXJpZXMvMS8x.json" />
+      <None Remove="RequiredShellsAssertion\RequiredShellsResources\DefaultTemplate\Submodels\aHR0cHM6Ly9hZG1pbi1zaGVsbC5pby9pZHRhL1NpbXVsYXRpb25Nb2RlbHMvU2ltdWxhdGlvbk1vZGVsLzEvMA.json" />
+      <EmbeddedResource Include="RequiredShellsAssertion\RequiredShellsResources\DefaultTemplate\Submodels\aHR0cHM6Ly9hZG1pbi1zaGVsbC5pby9pZHRhL1NpbXVsYXRpb25Nb2RlbHMvU2ltdWxhdGlvbk1vZGVsLzEvMA.json" />
+      <None Remove="RequiredShellsAssertion\RequiredShellsResources\DefaultTemplate\Submodels\aHR0cHM6Ly9hZG1pbi1zaGVsbC5pby9pZHRhL2llYzYyNjgzLzEvMC9SZWxpYWJpbGl0eQ.json" />
+      <EmbeddedResource Include="RequiredShellsAssertion\RequiredShellsResources\DefaultTemplate\Submodels\aHR0cHM6Ly9hZG1pbi1zaGVsbC5pby9pZHRhL2llYzYyNjgzLzEvMC9SZWxpYWJpbGl0eQ.json" />
+      <None Remove="RequiredShellsAssertion\RequiredShellsResources\DefaultTemplate\Submodels\aHR0cHM6Ly9hZG1pbi1zaGVsbC5pby9pZHRhL2llYzYyNjgzLzEvMC9GdW5jdGlvbmFsU2FmZXR5.json" />
+      <EmbeddedResource Include="RequiredShellsAssertion\RequiredShellsResources\DefaultTemplate\Submodels\aHR0cHM6Ly9hZG1pbi1zaGVsbC5pby9pZHRhL2llYzYyNjgzLzEvMC9GdW5jdGlvbmFsU2FmZXR5.json" />
+    </ItemGroup>
+    
+</Project>
